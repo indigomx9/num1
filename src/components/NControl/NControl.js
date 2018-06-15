@@ -3,7 +3,9 @@ import classes from './NControl.css';
 
 let NControl = (props) => {
     return (
-        <div className={classes.NControl} onClick={props.clicked}>
+        <div 
+            className={classes.NControl} 
+            onClick={props.clicked}>            
             {props.label}
         </div>
     );

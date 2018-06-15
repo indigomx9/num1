@@ -3,7 +3,7 @@ import numberReducer from './numberReducer';
 import resultReducer from './resultReducer';
 
 let rootReducer = combineReducers({
-    ctr: numberReducer,
+    num: numberReducer,
     res: resultReducer
 });
 

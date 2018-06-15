@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
 
+body {
+    background-color: #8BA4B7;
+}
+
 .NOutput {
     width: 100%;
     font-family: 'Black Han Sans', sans-serif;
-    background-color: #CA6546;
-    color: #000;
+    background-color: #3C3545;
+    color: #F4AF76;
     font-size: 4rem;
     text-align: center;
     padding: 20px 0;

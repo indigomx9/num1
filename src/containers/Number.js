@@ -11,13 +11,13 @@ import {
      render() {
          return (
              <div>
-                 <NOutput value={this.props.ctr} />
+                 <NOutput value={this.props.num} />                 
                  <NControl label="Increment" clicked={this.props.onIncrementNumber} />
                  <NControl label="Decrement" clicked={this.props.onDecrementNumber} />
                  <NControl label="Add 10" clicked={this.props.onAddNumber} />
                  <NControl label="Subtract 15" clicked={this.props.onSubtractNumber} />
                  <hr/>
-                 <button onClick={() => this.props.onStoreResult(this.props.ctr)}>Store Result</button>
+                 <button onClick={() => this.props.onStoreResult(this.props.num)}>Store Result</button>
                  <ul>
                      {this.props.storedResults.map(strResult => (
                          <li
@@ -34,7 +34,7 @@ import {
 
  let mapStateToProps = (state) => {
      return {
-         ctr: state.ctr.number,
+         num: state.num.number,
          storedResults: state.res.results
      }
  };
